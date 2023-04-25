@@ -60,7 +60,7 @@ environment {
             }
      stage('Deploy app by Ansible'){
          steps{
-            ansiblePlaybook credentialsId: 'ans', disableHostKeyChecking: true, installation: 'ansible', inventory: '/etc/ansible/hosts', playbook: 'bank-playbook.yml'
+            ansiblePlaybook credentialsId: 'ans', disableHostKeyChecking: true, installation: 'ansible', inventory: '/home/ubuntu/inventory', playbook: 'bank-playbook.yml'
          } 
       }
         }
